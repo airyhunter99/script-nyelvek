@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Ételek</title>
+</head>
+    <body>
+
+    <h3><a href="/fooldal">Vissza a főoldalra</a></h3><br><br><br>
+
+    {% for etel in etelek %}
+        <a href="/etel?azonosito={{ etel['azonosito'] }}">{{ etel["nev"] }}</a><br>
+    {% endfor %}
+
+    </body>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "ar": 1540,
+        "azonosito": 1,
+        "kaloria": 1000,
+        "nev": "Sonkás pizza"
+    },
+    {
+        "ar": 1200,
+        "azonosito": 2,
+        "kaloria": 700,
+        "nev": "Gyros"
+    },
+    {
+        "ar": 800,
+        "azonosito": 3,
+        "kaloria": 400,
+        "nev": "Krumplifőzelék"
+    }
+]

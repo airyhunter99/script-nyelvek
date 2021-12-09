@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Főoldal</title>
+</head>
+<body>
+    <h1>Üdvözöllek kalandor!</h1>
+    <br><br>
+
+    Nézz körül <a href="/etelek">Ételeink között</a>
+
+    <br><br>
+    <h2>Vagy adj hozzá te is új ételt!</h2>
+    <form method="post" action="/hozzaad">
+        <input id="nev" type="text" name="nev">
+        <label for="nev">Név </label><br>
+
+        <input id="ar" type="number" name="ar">
+        <label for="ar">Ár </label><br>
+
+        <input id="kaloria" type="text" name="kaloria">
+        <label for="kaloria">Kalória </label><br>
+
+        <input type="submit" value="Étel hozzáadása">
+    </form>
+</body>
+</html>
