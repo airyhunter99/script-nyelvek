@@ -41,14 +41,16 @@ def uj_etel():
 
     etelek = json.load(open('etelek.json', encoding="UTF-8"))
 
-    etel = {
-        "azonosito": len(etelek) + 1,
-        "nev": request.form["nev"],
-        "ar": int(request.form["ar"]),
-        "kaloria": int(request.form["kaloria"])
-    }
+
 
     try:
+        etel = {
+            "azonosito": len(etelek) + 1,
+            "nev": request.form["nev"],
+            "ar": int(request.form["ar"]),
+            "kaloria": int(request.form["kaloria"])
+        }
+
         jsonschema.validate(instance=etel, schema=schema)
 
         etelek.append(etel)
@@ -56,6 +58,6 @@ def uj_etel():
         with open("etelek.json", "w", encoding="utf-8") as f:
             f.write(json.dumps(etelek, indent=4, ensure_ascii=False))
     except:
-        return 'Hibás típus!'
+        return 'Hibás típus!', 400
 
     return redirect("/fooldal")

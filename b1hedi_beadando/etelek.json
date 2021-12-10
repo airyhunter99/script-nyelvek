@@ -16,5 +16,17 @@
         "azonosito": 3,
         "kaloria": 400,
         "nev": "Krumplifőzelék"
+    },
+    {
+        "ar": 800,
+        "azonosito": 4,
+        "kaloria": 800,
+        "nev": "Hamburger"
+    },
+    {
+        "ar": 600,
+        "azonosito": 5,
+        "kaloria": 1000,
+        "nev": "Hotdog"
     }
 ]
